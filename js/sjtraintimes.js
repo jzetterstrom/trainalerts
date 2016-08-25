@@ -23,7 +23,7 @@
                              '<i class="entypo-feather"></i>'+
                            '</div>'+
                            '<div class="timeline-label">'+
-                             '<h2>'+list[i].station.stationName+'<span><div class="container"><button type="button" class="btn" onclick="sendSms()">Send SMS</button></div></span></h2>'+
+                             '<h2>'+list[i].station.stationName+' Spår: '+list[i].track.scheduledTrack+'<br/><span><button type="button" class="btn" onclick="sendSms()">Send SMS</button></span></h2>'+
                            '</div>'+
                          '</div> </article>';
 
