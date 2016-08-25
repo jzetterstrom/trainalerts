@@ -6,3 +6,4 @@
 *.iws
 out
 *.log
+node_modules
