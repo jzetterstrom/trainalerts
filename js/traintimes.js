@@ -8,7 +8,11 @@
            contentType:"text/xml; charset=utf-8",
            dataType:"json",
            success: function(response){
-             alert(response);
+             list = response.RESPONSE.RESULT[0].TrainAnnouncement;
+                console.log(list);
+             for (var i = 0; i < list.length; i++ ){
+                console.log(list[i]);
+             }
            },
            error: function(response) {
               alert(response);
