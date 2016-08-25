@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,19 +38,63 @@
         <div class="container">
           <div class="input-group">
             <input class="form-control" name="tågnr" placeholder="Tågnummer" required="">
+=======
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrainAlerts</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCTjLlT-SLDZf-sW8xw85ZtRUTWQBd-FYo",
+    authDomain: "trainalerts-15b97.firebaseapp.com",
+    databaseURL: "https://trainalerts-15b97.firebaseio.com",
+    storageBucket: "trainalerts-15b97.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+</head>
+<body>
+<form class="form-horizontal">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>TrainAlerts</legend>
+
+    <div class="row">
+      <div class="container">
+        <div class="input-group">
+          <input class="form-control" name="tågnr" placeholder="Tågnummer" required="">
+>>>>>>> origin/master
             <span class="input-group-btn">
               <input type="submit" class="form-control btn-success" value="↪">
               </span>
-          </div>
-       </div>
-      </fieldset>
-    </form>
-    <hr>
+        </div>
+      </div>
+  </fieldset>
+</form>
+<hr>
 
-    <div class="container">
+<div class="container">
   <div class="row">
     <div class="timeline-centered">
 
+<<<<<<< HEAD
     <article class="timeline-entry">
       <div class="timeline-entry-inner">
         <time class="timeline-time" datetime="2014-01-10T03:45"><span>03:45 AM</span> <span>Today</span></time>
@@ -76,15 +121,72 @@
         </div>
      </div>
    </article>
+=======
+      <article class="timeline-entry">
 
-</div>
+        <div class="timeline-entry-inner">
+          <time class="timeline-time" datetime="2014-01-10T03:45"><span>03:45 AM</span> <span>Today</span></time>
+
+          <div class="timeline-icon">
+            <i class="entypo-feather"></i>
+          </div>
+
+          <div class="timeline-label">
+            <h2>Malmö Centralstation</h2>
+          </div>
+        </div>
+
+      </article>
+
+
+      <article class="timeline-entry">
+
+        <div class="timeline-entry-inner">
+          <time class="timeline-time" datetime="2014-01-10T03:45"><span>03:45 AM</span> <span>Today</span></time>
+
+          <div class="timeline-icon">
+            <i class="entypo-suitcase"></i>
+          </div>
+
+          <div class="timeline-label">
+          </div>
+        </div>
+
+      </article>
+
+
+
+      <article class="timeline-entry begin">
+
+        <div class="timeline-entry-inner">
+          <time class="timeline-time" datetime="2014-01-10T03:45"><span>03:45 AM</span> <span>Today</span></time>
+          <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+            <i class="entypo-flight"></i>
+          </div>
+
+        </div>
+
+      </article>
+>>>>>>> origin/master
+
+    </div>
   </div>
 </div>
+<div class="container">
+  <button type="button" class="btn" onclick="alert('test');return writeNewPost('dummy', 'username', null, 'my first post', 'Testing testing');">Post dummy data to Firebase</button>
+</div>
+<div class="container">
+  <button type="button" class="btn" onclick="sendSms()">Send SMS</button>
+</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/traintimes.js"></script>
-  </body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/traintimes.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/sms.js"></script>
+</body>
 </html>
 
 
